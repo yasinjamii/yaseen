@@ -19,6 +19,7 @@ class StockConsignmentReport(models.TransientModel):
 
     @api.multi
     def consignment_stock_report_print(self):
+        print('newwwwwww')
         self.file_name = 'filename.xls'
         workbook = xlwt.Workbook()
         worksheet = workbook.add_sheet('Sheet 1')
